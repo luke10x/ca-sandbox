@@ -1,0 +1,4 @@
+FROM maven
+#COPY ./pom.xml /app/pom.xml
+WORKDIR /app
+#RUN mvn dependency:resolve 
