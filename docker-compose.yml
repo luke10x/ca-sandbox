@@ -15,7 +15,9 @@ services:
       - 8080:8080
 
   chrome:
-    image: selenium/node-chrome-debug:3.11.0-californium
+    build:
+      context: ./chrome
+      dockerfile: Dockerfile
     volumes:
       - /dev/shm:/dev/shm
     depends_on:
