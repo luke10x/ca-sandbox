@@ -14,7 +14,7 @@ services:
     ports:
       - 8080:8080
 
-  firefox:
+  chrome:
     image: selenium/node-chrome-debug:3.11.0-californium
     volumes:
       - /dev/shm:/dev/shm
@@ -43,7 +43,6 @@ services:
         aliases:
           - google.com
           - www.google.com
-
 
 networks:
   cucumber-sandbox-network:
