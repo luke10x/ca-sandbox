@@ -6,4 +6,8 @@ install:
 		-v $(PWD)/client/ca:/ca \
 		ubuntu bash /generate-certs.sh
 
-.PHONY: install
+google:
+	docker-compose run client bash -c 'curl https://www.google.com'
+
+.PHONY: install google 
+
